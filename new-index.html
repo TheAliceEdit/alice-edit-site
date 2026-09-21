@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STOP! Before You Buy a High-Ticket Sales Course — The Alice Edit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211F1D;
+    --paper:#FAF6EF;
+    --paper-2:#F3EEE3;
+    --rust:#B8390E;
+    --teal:#2F5D50;
+    --gold:#E8B23D;
+    --muted:#6B6459;
+    --line:#DDD3C0;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Lora', Georgia, serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:17px;
+  }
+  h1,h2,h3,.sans{font-family:'Poppins',sans-serif;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .wrap{max-width:700px; margin:0 auto; padding:0 24px;}
+  .wrap-wide{max-width:920px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- TOP WORDMARK ---------- */
+  .topbar{
+    padding:22px 24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:920px;
+    margin:0 auto;
+  }
+  .wordmark{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:0.5px;
+  }
+  .topbar .tag{
+    font-family:'Lora',serif;
+    font-style:italic;
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  /* ---------- HERO (mirrors the guide's own cover) ---------- */
+  .hero{
+    background:var(--ink);
+    color:var(--paper);
+    position:relative;
+    padding:0;
+  }
+  .hero .stripe{ height:10px; background:var(--rust); }
+  .hero-inner{
+    max-width:700px;
+    margin:0 auto;
+    padding:76px 24px 64px 24px;
+  }
+  .hero-eyebrow{
+    font-family:'Poppins',sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:var(--gold);
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:76px;
+    line-height:0.95;
+    font-weight:800;
+    letter-spacing:-1px;
+  }
+  .hero h1 .bang{ color:var(--rust); -webkit-text-stroke:2px var(--paper); }
+  .hero .sub{
+    font-family:'Lora',serif;
+    font-style:italic;
+    font-size:24px;
+    margin-top:26px;
+    max-width:480px;
+    color:#F1E7D3;
+    line-height:1.4;
+  }
+  .hero .desc{
+    font-size:16.5px;
+    margin-top:26px;
+    max-width:460px;
+    color:#D8CFC0;
+  }
+  .hero-cta{
+    display:inline-block;
+    margin-top:38px;
+    background:var(--rust);
+    color:var(--paper);
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:16px;
+    text-decoration:none;
+    padding:16px 30px;
+    border:2px solid var(--rust);
+  }
+  .hero-cta:hover{ background:transparent; }
+  .hero-price-note{
+    font-family:'Poppins',sans-serif;
+    font-size:13px;
+    color:#B7AC96;
+    margin-top:14px;
+  }
+  .hero-byline{
+    margin-top:60px;
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+  }
+  .hero-byline .role{
+    display:block;
+    font-family:'Lora',serif;
+    font-style:italic;
+    color:#D8CFC0;
+    font-size:13px;
+    margin-top:4px;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{ padding:64px 0; }
+  .lede{
+    font-style:italic;
+    font-size:22px;
+    color:var(--ink);
+    border-left:3px solid var(--gold);
+    padding-left:22px;
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  p{ margin-bottom:18px; color:#3A3733; }
+  p:last-child{ margin-bottom:0; }
+
+  .kicker{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:12.5px;
+    letter-spacing:1px;
+    color:var(--rust);
+    margin-bottom:10px;
+  }
+  h2.section-title{
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:24px;
+    max-width:520px;
+  }
+
+  hr.rule{ border:none; border-top:1px solid var(--line); }
+
+  /* ---------- FIVE QUESTIONS ---------- */
+  .qlist{ margin-top:36px; }
+  .qitem{
+    display:flex;
+    gap:22px;
+    padding:26px 0;
+    border-top:1px solid var(--line);
+  }
+  .qitem:last-child{ border-bottom:1px solid var(--line); }
+  .qnum{
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:15px;
+    color:var(--rust);
+    flex:0 0 auto;
+    padding-top:2px;
+  }
+  .qtitle{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:19px;
+    color:var(--ink);
+    margin-bottom:6px;
+    line-height:1.3;
+  }
+  .qdesc{
+    font-style:italic;
+    color:var(--muted);
+    font-size:16px;
+  }
+
+  /* ---------- WHAT'S INSIDE ---------- */
+  .inside-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:12px;
+  }
+  .inside-col .kicker{ color:var(--teal); }
+  .inside-col h3{
+    font-size:22px;
+    margin-bottom:16px;
+  }
+  .inside-col ul{ list-style:none; }
+  .inside-col li{
+    padding:10px 0 10px 22px;
+    position:relative;
+    border-top:1px solid var(--line);
+    font-size:15.5px;
+    color:#3A3733;
+  }
+  .inside-col li:before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--rust);
+  }
+  .inside-col:last-child .kicker{ color:var(--rust); }
+
+  /* ---------- WHO IT'S FOR ---------- */
+  .for-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    margin-top:12px;
+  }
+  .for-card{
+    background:var(--paper-2);
+    padding:28px;
+    border-left:4px solid var(--teal);
+  }
+  .for-card.not{ border-left-color:var(--rust); }
+  .for-card h3{
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+    letter-spacing:0.3px;
+    margin-bottom:14px;
+  }
+  .for-card ul{ list-style:none; }
+  .for-card li{
+    font-size:15px;
+    color:#3A3733;
+    margin-bottom:10px;
+    padding-left:18px;
+    position:relative;
+  }
+  .for-card li:before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:var(--teal);
+  }
+  .for-card.not li:before{ color:var(--rust); }
+
+  /* ---------- EMAIL CAPTURE ---------- */
+  .capture-box{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    padding:40px;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:36px;
+    align-items:center;
+  }
+  .capture-copy p{ color:#3A3733; font-size:15px; }
+  .capture-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .capture-form input[type=email]{
+    width:100%;
+    padding:14px 16px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    font-family:'Poppins',sans-serif;
+    font-size:14.5px;
+    color:var(--ink);
+  }
+  .capture-form input:focus{ outline:2px solid var(--teal); outline-offset:1px; }
+  .capture-btn{
+    background:var(--teal);
+    color:var(--paper);
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:14.5px;
+    border:none;
+    padding:14px;
+    cursor:pointer;
+  }
+  .capture-btn:hover{ background:#254a3f; }
+
+  /* ---------- ORDER CARD ---------- */
+  .order-section{ background:var(--ink); color:var(--paper); }
+  .order-card{
+    max-width:480px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .order-card .kicker{ color:var(--gold); text-align:center; }
+  .order-card h2{
+    font-size:30px;
+    margin-bottom:10px;
+  }
+  .order-card .desc{
+    color:#D8CFC0;
+    font-size:16px;
+    margin-bottom:30px;
+  }
+  .price-box{
+    background:#2A2724;
+    border:1px solid #46413B;
+    padding:30px 26px;
+    text-align:left;
+  }
+  .price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom:22px;
+  }
+  .price-row .name{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:16px;
+  }
+  .price-row .amount{
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:34px;
+    color:var(--gold);
+  }
+  .price-box ul{ list-style:none; margin-bottom:26px; }
+  .price-box li{
+    font-size:14.5px;
+    color:#D8CFC0;
+    padding:9px 0;
+    border-top:1px solid #46413B;
+    padding-left:20px;
+    position:relative;
+  }
+  .price-box li:before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--teal);
+    font-weight:700;
+  }
+  .buy-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--rust);
+    color:var(--paper);
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:16.5px;
+    text-decoration:none;
+    padding:17px;
+    border:none;
+    cursor:pointer;
+  }
+  .buy-btn:hover{ background:#9c2f0c; }
+  .secure-note{
+    margin-top:16px;
+    font-size:12.5px;
+    color:#9C927E;
+    font-family:'Poppins',sans-serif;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:40px 0 60px 0;
+    text-align:center;
+  }
+  footer .sign{
+    font-family:'Lora',serif;
+    font-style:italic;
+    font-size:16px;
+    color:var(--muted);
+  }
+  footer .fine{
+    margin-top:18px;
+    font-family:'Poppins',sans-serif;
+    font-size:12px;
+    color:#A79E8E;
+  }
+
+  @media (max-width:640px){
+    body{ font-size:16px; }
+    .hero h1{ font-size:52px; }
+    .hero .sub{ font-size:20px; }
+    h2.section-title{ font-size:26px; }
+    .inside-grid, .for-grid{ grid-template-columns:1fr; gap:28px; }
+    .capture-box{ grid-template-columns:1fr; padding:28px; }
+    section{ padding:48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wordmark">THE ALICE EDIT</div>
+  <div class="tag">by Alice H.</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="stripe"></div>
+  <div class="hero-inner">
+    <h1>STOP<span class="bang">!</span></h1>
+    <div class="sub">Before you buy a High-Ticket Sales course&nbsp;&hellip; read this.</div>
+    <div class="desc">The 5 questions I wish I'd asked before spending thousands — plus a workbook to help you figure out which program is the best fit for YOU.</div>
+    <a href="payment.html" class="hero-cta">Get the guide — $37</a>
+    <div class="hero-price-note">Instant PDF download. Read on any device.</div>
+    <div class="hero-byline">Alice H.
+      <span class="role">I've made the mistakes so you don't have to.</span>
+    </div>
+  </div>
+  <div class="stripe"></div>
+</div>
+
+<!-- THE STORY -->
+<section>
+  <div class="wrap">
+    <p class="lede">You're not being dramatic for hesitating. A course that costs more than your rent deserves more than a countdown timer and a "doors close tonight" email.</p>
+    <p>Here's mine: I was selling trucks at a dealership when a woman in a pink G-Wagon showed up in my Instagram feed — matcha in hand, running her whole business from remote high-ticket sales. Then came the masterclasses, the price tags, and the promise: get placed on an offer, or get refunded.</p>
+    <p>I signed. I swiped. I showed up. When my turn came, the $12,000 offer I was placed on fizzled before it launched. I got swapped to a lower-ticket offer with no real support behind it either, and ended up closing for the course creator herself — no call reviews, no coaching, just unqualified leads. When I finally gave notice, I was met with silence.</p>
+    <p>None of that makes high-ticket sales a scam. I still think it's one of the best skills you can build. But the version sold on Instagram and the version that shows up after you pay can be two very different things — and that gap is exactly what this guide is for.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- FIVE QUESTIONS -->
+<section>
+  <div class="wrap">
+    <div class="kicker">PART ONE</div>
+    <h2 class="section-title">The five questions I wish I'd asked before I paid.</h2>
+    <p>Not "is this a scam" questions. Quieter ones — the kind that are easy to skip when you're excited, and expensive to skip when you're not.</p>
+
+    <div class="qlist">
+      <div class="qitem">
+        <div class="qnum">01</div>
+        <div>
+          <div class="qtitle">Do you actually relate to the person behind the program — or are you attracted to the life they're selling?</div>
+          <div class="qdesc">There's a difference between wanting someone's life and wanting them as your mentor.</div>
+        </div>
+      </div>
+      <div class="qitem">
+        <div class="qnum">02</div>
+        <div>
+          <div class="qtitle">What do their students' results REALLY look like?</div>
+          <div class="qdesc">A handful of incredible testimonials shows you what's possible. It doesn't show you what's typical.</div>
+        </div>
+      </div>
+      <div class="qitem">
+        <div class="qnum">03</div>
+        <div>
+          <div class="qtitle">What actually happens AFTER the course?</div>
+          <div class="qdesc">Finishing the modules isn't the finish line. It's when you start trying to use what you learned.</div>
+        </div>
+      </div>
+      <div class="qitem">
+        <div class="qnum">04</div>
+        <div>
+          <div class="qtitle">What are they actually promising you — and is it in writing?</div>
+          <div class="qdesc">The sales page, the enrollment call, and the contract should all tell you the same story.</div>
+        </div>
+      </div>
+      <div class="qitem">
+        <div class="qnum">05</div>
+        <div>
+          <div class="qtitle">Can I afford the investment AND the runway?</div>
+          <div class="qdesc">The price of the course isn't necessarily the full price of making the transition.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- WHAT'S INSIDE -->
+<section>
+  <div class="wrap">
+    <div class="kicker">WHAT YOU GET</div>
+    <h2 class="section-title">A guide to read, and a workbook to actually use.</h2>
+    <div class="inside-grid">
+      <div class="inside-col">
+        <div class="kicker">PART ONE — THE GUIDE</div>
+        <h3>The five questions</h3>
+        <ul>
+          <li>My own story of what happened when I skipped these questions</li>
+          <li>A "Watch For" list of red flags for each question</li>
+          <li>Exact questions to ask on your enrollment call</li>
+        </ul>
+      </div>
+      <div class="inside-col">
+        <div class="kicker">PART TWO — THE WORKBOOK</div>
+        <h3>Put it to use</h3>
+        <ul>
+          <li>Guided worksheets for all five questions, with a color-coded read on each</li>
+          <li>An enrollment-call checklist to bring to the phone</li>
+          <li>A course comparison scorecard for up to three programs</li>
+          <li>A full Real Investment + Runway calculator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- WHO IT'S FOR -->
+<section>
+  <div class="wrap">
+    <div class="kicker">IS THIS FOR YOU</div>
+    <h2 class="section-title">This isn't a course ranking. It's a decision tool.</h2>
+    <p>I'm not here to tell you which program is "the best," or that high-ticket sales is a bad idea. I still think it's an amazing industry. This is for figuring out what YOU need — before someone else tells you what you need.</p>
+    <div class="for-grid">
+      <div class="for-card">
+        <h3>THIS IS FOR YOU IF</h3>
+        <ul>
+          <li>You're seriously considering a high-ticket sales or closer-training program</li>
+          <li>You want a real framework, not just a gut feeling</li>
+          <li>You'd rather ask hard questions now than find out later</li>
+        </ul>
+      </div>
+      <div class="for-card not">
+        <h3>THIS ISN'T FOR YOU IF</h3>
+        <ul>
+          <li>You've already enrolled and just want reassurance</li>
+          <li>You want someone to tell you which program to pick</li>
+          <li>You're looking for reasons to distrust the whole industry</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order-section" id="order">
+  <div class="wrap order-card">
+    <div class="kicker">GET THE GUIDE</div>
+    <h2>Know exactly what you're saying yes to.</h2>
+    <div class="desc">Before you spend thousands on a program, spend a few minutes with this.</div>
+
+    <div class="price-box">
+      <div class="price-row">
+        <div class="name">STOP! Before You Buy a<br>High-Ticket Sales Course</div>
+        <div class="amount">$37</div>
+      </div>
+      <ul>
+        <li>24-page PDF guide + workbook</li>
+        <li>All 5 questions, worked through in detail</li>
+        <li>Enrollment-call checklist &mdash; yours as a bonus, ready to print separately</li>
+        <li>Course comparison scorecard</li>
+        <li>Real Investment + Runway calculator</li>
+        <li>Instant download, yours to keep</li>
+      </ul>
+      <a href="payment.html" class="buy-btn">Continue to checkout</a>
+      <div class="secure-note">Secure checkout · Instant delivery · All sales final</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="sign">— Alice</div>
+    <div class="fine">© 2026 The Alice Edit. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
